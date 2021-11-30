@@ -1,0 +1,100 @@
+@import '../../util/styles/css-variables.css';
+
+ /* BUG !!!: überschiesst sonst */
+ /* 
+ html { width: 80% }
+ */
+
+.ant-layout, .ant-layout-header, .ant-layout-content, .ant-card {
+/*  background-color: var(--black); */
+  background: var(--blue) !important;
+}
+/* Höhe des Headers und Ausmasse des Logos wie auf Surass Webseite */
+.ant-layout-header {
+  min-height: 185px; 
+  padding: 0 80px;
+}
+.logo {
+  float: left;
+  width: 190px;
+  height: 174px;
+  margin: 0 24px 0 0;
+}
+.header-title {
+/*  color: white; */
+  height: 121px;
+}
+
+.ant-layout-content {
+  border-top: solid 1px var(--surass-purple);
+  margin: 4px 80px 0 80px;
+  padding: 24px;
+  background-color: var(--white);
+}
+.ant-layout-footer {
+  margin: 0;
+  padding: 24px 104px;
+  background-color: var(--lightOffGreyVariant);
+}
+
+/* .site-layout-content {
+  min-height: 480px;
+  padding: 24px;
+  background: #fff;
+} */
+
+.main-img-surgery .ant-image-img-XXX { width: '100%';}
+
+.landing-page-main-img-wrapper {
+  position: relative;
+}
+
+.landing-page-login-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#company-tabs .ant-descriptions-bordered .ant-descriptions-item-label,
+#company-tabs .ant-table-thead > tr > th {
+  background-color: var(--red) !important;
+  color: var(--white) !important
+}
+
+#company-tabs .ant-descriptions-bordered .ant-descriptions-item-content,
+#company-tabs .ant-table-tbody > tr > td {
+  background-color: var(--purple) !important;
+  color: var(--white) !important
+}
+
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab {
+  background-color: var(--light-blue) !important;
+}
+
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: var(--purple) !important;
+}
+
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+  color: var(--white) !important;
+}
+
+.ant-btn {
+  background-color: var(--light-blue) !important;
+  height: 42px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  font-weight: bold !important;
+  color: var(--white) !important;
+  border: 1px solid var(--white) !important;
+}
+
+.ant-btn:active, .ant-btn:hover, .ant-btn.active {
+  background-color: var(--purple) !important;
+}
+
+h1.ant-typography {
+  color: var(--white) !important;
+}

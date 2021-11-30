@@ -1,0 +1,88 @@
+type EquityInvestment @model 
+  @key(name: "byCompany", fields: ["companyId"])
+{
+  id: ID!
+  companyId: ID!
+  date: String
+  investedAmount: Int
+  currency: Currency
+  cashFlows: [CashFlow!]
+  nbShares: Int
+  note: Note
+}
+
+type LoanInvestment @model 
+  @key(name: "byCompany", fields: ["companyId"])
+{
+  id: ID!
+  companyId: ID!
+  date: String
+  investedAmount: Int
+  currency: Currency
+  cashFlows: [CashFlow!]
+  maturity: String
+  interestRateInPercent: Float
+  interestPayments: [CashFlow!]
+  repayments: [CashFlow!]
+  note: Note
+}
+
+type Company @model {
+  id: ID!
+  name: String
+  equityInvestments: [EquityInvestment!] @connection(keyName: "byCompany", fields: ["id"])
+  loanInvestments: [LoanInvestment!] @connection(keyName: "byCompany", fields: ["id"])
+  sharesOutstanding: [SharesOutstanding!]
+  notes: [Note!]
+}
+
+type CashFlow
+{
+  date: String
+  amount: Int
+  account: Account
+  fx: Float
+}
+
+type SharesOutstanding
+{
+  id: ID!
+  date: String
+  nbShares: Int
+  companyId: ID!
+}
+
+type Note
+{
+  id: ID!
+  date: String
+  note: String
+  pdfLink: String
+  documentType: DocumentType
+}
+
+enum Currency {
+    CHF
+    EUR
+    USD
+    GBP
+    JPY
+}
+
+enum Account {
+  ZKB_CHF
+  ZKB_USD
+  ZKB_EUR
+  CS
+  Other
+}
+
+enum DocumentType {
+  AnnualStatement
+  GeneralAssembly
+  InvestmentPresentation
+  Prospectus
+  Email
+  Letter
+  Article
+}

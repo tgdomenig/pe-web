@@ -1,0 +1,53 @@
+html {
+  --white: #ffffff;
+  --red: #882601;
+  --purple: #813772;
+  --blue: #062f4f;
+  --black: #0000;
+  --light-blue: #1185DF;
+
+  --lightOffGrey: #efefea;
+  --mediumOffGrey: #617080;
+  --mediumGrey: #bababa;
+  --darkGrey: #444444;
+
+  --lightOffGreyVariant: rgb(240, 242, 245);
+
+
+  --margin-xsm: 2px;
+  --margin-sm: 8px;
+  --margin-md: 12px;
+  --margin-lg: 20px;
+  --margin-xl: 30px;
+
+  --padding-xsm: 4px;
+  --padding-sm: 8px;
+  --padding-md: 12px;
+  --padding-lg: 20px;
+  --padding-xl: 30px;
+  --padding-xxl: 30px;
+
+  --padding-neg-xsm: -4px;
+  --padding-neg-sm: -8px;
+  --padding-neg-md: -12px;
+
+  --line-height-sm: 18px;
+  --line-height-lg: 36px;
+
+  --border-radius-sm: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-lg-m1: 7px;
+  --border-radius-xl: 20px;
+  --border-width-sm: 2px;
+  --border-width-lg: 4px;
+
+  --fonts-sm: 12px;
+  --fonts-md: 16px;
+  --fonts-lg: 24px;
+  --fonts-xl: 32px;
+
+  --icon-size-sm: 20px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+  --icon-size-xl: 36px;
+}

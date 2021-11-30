@@ -1,0 +1,20 @@
+{
+  "peenv": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pe-web-peenv-114032-authRole",
+      "UnauthRoleArn": "arn:aws:iam::187533268187:role/amplify-pe-web-peenv-114032-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::187533268187:role/amplify-pe-web-peenv-114032-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-pe-web-peenv-114032-deployment",
+      "UnauthRoleName": "amplify-pe-web-peenv-114032-unauthRole",
+      "StackName": "amplify-pe-web-peenv-114032",
+      "StackId": "arn:aws:cloudformation:eu-central-1:187533268187:stack/amplify-pe-web-peenv-114032/4b6bd770-25c0-11ec-98e8-0a334edc70a6",
+      "AmplifyAppId": "d29t7gp0oqso7a"
+    },
+    "categories": {
+      "auth": {
+        "pewebe7ffd32b": {}
+      }
+    }
+  }
+}
